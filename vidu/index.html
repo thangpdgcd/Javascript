@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form >
+    <table border="1">
+  <thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+    </tr>
+  </thead >    
+  <tbody >
+    <tr>
+        <td id="code"></td>
+        <td></td>
+        <td></td>
+    </tr>
+  </tbody>
+    </table>
+</form>
+</body>
+</html>
+<script>
+ 
+
+  
+ function Code(){
+      
+    var object=
+    {
+        name:`Thang`,
+        Age:20,
+        email:'thang@12',
+        
+    getage: function()
+    {
+        return this.Age
+    }
+    }
+    document.getElementById('code')
+    
+console.log(object);
+console.log(object.getage());
+ }
+
+
+
+</script>

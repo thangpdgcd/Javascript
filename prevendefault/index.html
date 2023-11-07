@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a name="code" href="https://www.facebook.com/thangphan2002">
+        study programming
+    </a>
+    <br>
+
+    <a name="programming" href="https://www.facebook.com/">
+        page
+    </a>
+</body>
+</html>
+<script>
+
+    //prevendefault
+var eElement=document.anchors//Lấy thẻ a đặt name cho thẻ
+document.links
+console.log(eElement);//lấy ra 2 thẻ
+
+for(var i=0;i<eElement.length;i++)
+{
+    eElement[i].onclick=function(e)
+    {
+        console.log(e.target.href);//lắng nghe sự kiện lấy link href cl ra
+        if(!e.target.href.startsWith('https://www.facebook.com/thangphan2002')  )
+        {
+            e.preventDefault(); //ngăn chặn đường dẫn
+        }
+
+    }
+}
+//Phương thức preventDefault() của đối tượng event được sử dụng để ngăn chặn cách xử lý mặc định của trình duyệt khi xảy ra sự kiện.
+</script>

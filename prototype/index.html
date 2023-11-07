@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+/*
+ nguyên mẫu tạo nên 1 đối tượng
+ prototype:thêm thuộc tính.
+*/
+function constructure(lastname, firstname, age, address)
+{
+    this.lastname=lastname
+    this.firstname=firstname
+    this.age=age
+    this.address=address
+    this.getAll=function()
+    {
+        return `${
+            this.lastname
+        }`
+    }
+}
+constructure.prototype.classname='f8'
+constructure.prototype.getclass=function()
+{
+    return this.classname
+}
+var newcode= new constructure('thang','phan',20,'ngo quyen')
+
+console.log(newcode.classname);
+console.log(newcode.getAll());
+console.log(newcode);
+console.log(newcode.getclass());
+
+</script>

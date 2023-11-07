@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    
+ function User(firstname, lastname){
+    this.firstname =firstname
+    this.lastname =lastname
+    this.getName=function()
+    {
+        return `${
+            this.firstname,
+            this.lastname
+        }`
+    }
+ }
+ /*trên đây là 1 bản thiết kê
+ hàm tạo đối tượng*/
+ 
+var author = new User('thang','phan');
+var user= new User('phan','thang')
+
+author.title ='this is the code'
+ user.comment='this is the dev'
+
+console.log(user.getName());
+console.log(author.getName());
+</script>

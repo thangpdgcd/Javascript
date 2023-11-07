@@ -1,0 +1,3 @@
+//https://github.com/typicode/json-server
+1. sau khi tạo local json thêm 1 file.json
+2. tạo server local cho file code json-server --watch db.json

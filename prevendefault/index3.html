@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        programming
+        <button>click me!</button>
+    </div>
+</body>
+</html>
+<script>
+
+    //stopPropagation
+  document.querySelector('div').onclick= function()
+  { 
+    console.log('programming');
+   
+  }
+
+document.querySelector('button').onclick=function(e)
+{
+    e.stopPropagation(); //đóng tính năng mở ra 2 thẻ
+console.log('click me!');
+}
+</script>

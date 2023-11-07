@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+
+</body>
+</html>
+<script>
+/*
+forEach()
+every()
+some()
+find()
+f
+
+*/
+var codearray =[
+    {
+        id:1,
+        name:'thang',
+        coin:0
+    },
+    {
+        id:2,
+        name:'john',
+        coin:0
+    },
+    {
+        id:3,
+        name:'john',
+        coin:0
+    }
+]
+// ham callback duyet qua cac phan tu cua mang-
+
+codearray.forEach(function(code, index)// trong này khai báo hàm mới
+{
+    console.log(index,code);
+})
+
+//every :giúp kiểm tra tất cả các phần tử trong mảng có thõa mãn một điều kiện nào đó hay không
+var isfree = codearray.every(function(code2,index)
+{
+    return code2.coin === 0;
+})
+console.log(isfree);
+
+///some():có nhiệm vụ lặp qua tất cả các phần tử của mảng, 
+//mỗi lần lặp nó sẽ truyền giá trị của phần tử đang lặp vào hàm callback.
+// Chỉ cần hàm callback return true là hàm some sẽ return true. 
+//Ngược lại, nếu duyệt hết mảng mà không có return true nào thì hàm some sẽ return false.
+var isfree = codearray.some(function(code2,index)
+{
+    return code2.coin === 0 //thoả mãn điều kiện trong mảng khai báo;
+})
+console.log(isfree);//boolean
+ 
+
+ //find():search
+ var isfree = codearray.find(function(code2,index)
+{
+    return code2.name === 'john' ;       
+})
+console.log(isfree);//boolean
+
+
+//filter():duyệt qua các phần tử và lấy phần tử trong mảng để thoả mản điều kiện trong hàm callback.
+var isfree = codearray.filter(function(code2,index)// lọc dữ liệu
+{
+    return code2.name === 'john' ;       
+})
+console.log(isfree);//boolean
+
+
+//map()
+/*là một kiểu dữ liệu của javascript cho phép lưu trữ các đối tượng dữ liệu 
+dưới dạng key-value (khóa-giá trị) pair. Nó có chức năng tương tự với object trong javascript,
+ nhưng có một số ưu điểm và hạn chế khác nhau.*/
+function Message(codemap2)
+{
+console.log(codemap2);
+}
+ var codemap = codearray.map(Message)
+
+
+
+</script>
+
+
+
+
+
+
+
+

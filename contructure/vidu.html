@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+ function code(firstname, lastname, age,address)
+ {
+    this.firstname=firstname
+    this.lastname=lastname
+    this.age=age
+    this.address=address
+    this.getAge=function()
+    {
+        return `${
+            this.age
+        }`
+    }
+    this.getAddress=function()
+    {
+        return`${
+            this.address
+        }`
+    }
+ }
+ 
+ var user=new code('phan','Thang',20,'ngo quyen',)
+ user.title='this is the code'
+ console.log(user.getAddress());
+ console.log(user.getAge());
+ console.log(user);
+
+
+
+</script>

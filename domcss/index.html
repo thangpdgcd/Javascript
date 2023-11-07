@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">html</div>
+</body>
+</html>
+<script>
+//style:object
+// use Object.sign
+//log ra lấy giá trị dom css
+    var codeelement =document.querySelector('.box')
+    console.log();
+    Object.assign(codeelement.style,
+    {
+        with:'100px',
+        height:'200px',
+        color:"red"
+    })
+    console.log(codeelement.style.with);
+</script>

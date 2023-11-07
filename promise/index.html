@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+  ///à một cơ chế trong JavaScript giúp bạn thực thi các tác vụ bất đồng bộ mà 
+  //không rơi vào callback hell hay pyramid of doom, là tình trạng các hàm callback lồng vào nhau ở quá nhiều tầng.
+
+  
+    //sử lý bất đồng bộ
+    //
+  // {
+  //console.log('Promise found');
+
+  //var promise = new Promise(function(resolve, reject) {
+   // if (request.status == 200) {
+     //   resolve(request.response); // we got data here, so resolve the Promise
+    //  } else {
+     //   reject(Error(request.statusText)); // status is not 200 OK, so reject
+    //  } 
+
+//  )}
+
+//sync/Asyns
+//sync:chạy theo luồng tuần tự
+
+
+//Async:settimeout,setinteval,fetch,xmlhttprequest,file reading, request animation frame
+  ///example
+setTimeout(function()
+{
+console.log(1);
+},1000)      
+console.log(2);
+</script>

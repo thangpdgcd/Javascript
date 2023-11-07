@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul
+        {
+            display: none;
+        }
+        input:focus ~ ul{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <input placeholder="Search">
+    <ul>
+        <li>js</li>
+        <li>php</li>
+        <li>golang</li>
+    </ul>
+</body>
+</html>
+<script>
+    //prevendefaut()
+    var code=document.querySelector('ul')
+code.onmousedown=function(e)
+{
+    e.preventDefault();
+}
+//ngăn chặn mọi hành vi mặc định 
+
+code.onclick=function(e)
+{
+    console.log(e.target);
+}
+
+</script>

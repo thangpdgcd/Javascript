@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    
+ var newcode =[
+    {
+        id:20,
+        name:'Thang',
+        email:'thang@123'
+    },
+    {
+        id:22,
+        name:'Thang',
+        email:'thang@123'
+    }
+ ]
+
+ var total=newcode.reduce(function(total1,newcodes)
+ {
+    return total1+newcodes.email
+ },0)
+ //dối số 0 giá trị khỏi tạo
+ console.log(total);
+
+
+
+
+ var number=[
+    
+        {
+        id:20,
+        name:'Thang',
+        email:'thang@123'
+    },
+    {
+        id:22,
+        name:'Thang',
+        email:'thang@123'
+    }
+    
+ ]
+ var number =[100,200,300,400,500]
+ var res= number.reduce(function(respo,numbers)
+{
+    return respo+numbers
+},0)
+console.log(res);
+
+
+
+
+
+var mang=[1,2,[3,4],6,7,[8,9]]
+var  flat=mang.reduce(function(flats,mangcode)
+{
+    return flats.concat(mangcode)
+},[])
+
+console.log(flat);
+
+
+
+
+
+
+</script>

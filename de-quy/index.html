@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+//xác định điểm dừng
+// logic handle => tạo ra điểm dừng
+/*function dequy(num)
+{
+    if(num<=0)
+    {
+        //dừng
+        //...
+        return;
+    }
+    dequy();
+}
+dequy(10);*/
+
+//example1
+function countdown(num)
+{
+    if(num>0)
+    {
+        console.log(num);
+        return countdown(num-1);//  đến khi duyệt 1 trừ 1 bằng 0, đk num>0 sai thì sẽ lọt vào đk dừng và trả về giá trị num và kt chương trình 
+    }
+    return num
+}
+countdown(3);
+
+
+//example 2
+
+function Dequy(code)
+{
+    
+    if(code>0)
+    {
+        console.log(code);
+        return Dequy(code -1)//true
+    }
+    return code//false
+}
+Dequy(5);
+
+
+//example 3
+/*
+-tạo 1 function cho 3 tham số vào bắt đầu, kết thúc và 1 hàm callback
+-khai báo 1 mảng gồm 3 phần tử
+-hàm định nghĩa:
+ +start =0,
++ end = độ dài của mảng trừ đi 1
++1 hàm callback có tham số index
+- đưa đk vào hàm loop:
++nếu bắt đầu <= kết thúc thì nó sẽ trả về hàm +1
++cho hàm callback có tham số bắt đầu vào.
+*/
+function loop(start,end,cb)
+{
+    if(start<=end)
+    {
+        cb(start);
+        return loop(start +1,end,cb)
+    }
+}
+var array =['js','nodejs','reacjs']
+loop(0,array.length-1,function(index)
+{
+    console.log(array[index]);
+}
+);
+
+
+//tính giai thừa
+//c1: classics
+function giaithua(number)
+{
+    var y=1;
+    for(var i=number;i>0;i--)
+    {
+        y=y*i
+    }
+    return y;//false
+}
+console.log(giaithua(6));   
+
+//c3: đệ quy
+function Tinhgiaithua(nhan)
+{
+    if(nhan>0)
+    {
+        return nhan * Tinhgiaithua(nhan-1)
+    }
+    return 1
+}  
+console.log(Tinhgiaithua(6));
+</script>

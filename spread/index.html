@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //spread
+    const myObject = {
+  a: 1,
+  b: 2,
+  c: 3
+};
+
+const { a, ...x } = myObject;//... gọi cấc biến trong object
+// a = 1
+// x = { b: 2, c: 3 }   
+
+
+//function
+restParam({
+  a: 1,
+  b: 2,
+  c: 3
+});
+
+function restParam({ a,...x }) {
+   a = 1
+   x = { b: 2, c: 3 }//gọi 2 thằng còn lại
+}
+
+</script>

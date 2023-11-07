@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red
+        {
+            color: red;   
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="code">code</div>
+</body>
+</html>
+<script>
+//classlist:
+//1.add
+//2.contains 
+//3.remove
+//4.toggle
+
+//thuộc tính classlist này đưa ra 1 danh sách element bên trong html
+
+//nôm na nó sẽ đưa ra 1 danh sách khi dùng classlist
+var box= document.querySelector('.code')
+//console.log(box.classList);
+//console.log(box.classList[0]);//lấy ra thằng đầu tiên
+//console.log(box.classList.value)//trả về chuỗi trong class
+
+//1.add
+box.classList.add('red')//add class css vào element 
+
+//2.contains
+console.log(box.classList.contains('red'));//if have class => true or false //trả về giá trị boolean 
+
+//3.remove
+console.log(box.classList.remove('red'));//xoá
+
+//4.toggle
+console.log(box.classList.toggle('red'));// if have class => true or false->trả về giá trị boolean
+
+</script>

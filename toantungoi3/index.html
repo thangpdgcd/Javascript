@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //toán tử ngôi 3 ternary operator
+    var Coin={
+        name:'js',
+        coin:260
+    }
+    if(Coin.coin>0)
+    {
+        console.log(`${
+           Coin.coin  
+        }'Coin'`);
+    }else
+    {
+        console.log('free');
+    }//c1
+
+var total =Coin.coin > 0 ?`${Coin.coin}, coin `:'free'//c2
+
+//example
+var a=1
+var b=2
+var c=a>0?`${a}:a` :b
+console.log(c);
+</script>

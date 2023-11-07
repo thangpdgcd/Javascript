@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var Myarray =[
+        {
+            id:0,
+            name:'thang',
+            dollar:100
+        },
+        {
+
+            id:0,
+            name:'john',
+            dollar:100
+        },
+        {
+
+            id:0,
+            name:'wick',
+            dollar:100
+        },
+        {
+
+            id:0,
+            name:'harry',
+            dollar:100
+       },
+    ]
+
+    function Showmessage(Myarray)
+    {
+        console.log(Myarray);
+    }
+    var  Myarray2=Myarray.map(Showmessage)
+
+
+    var  Myarray2=Myarray.map(function(mycode,index)
+    {
+        console.log(index,mycode);
+    })
+
+
+
+    var Myarray2=Myarray.every(function(code55,index)
+    {
+        return  code55.dollar === 100 
+    })
+    console.log(Myarray2);
+</script>

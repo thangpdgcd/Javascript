@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //callback hell
+setTimeout(function()
+{
+    console.log(1);//work1
+    setTimeout(function()
+{
+    console.log(2);//work2
+    setTimeout(function()
+{
+    console.log(4);//work3
+    setTimeout(function()
+{
+    console.log(4);//work4
+},1000)
+},1000)
+},1000)
+},1000)
+
+</script>

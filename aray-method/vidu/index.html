@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+</style>
+<body>
+    
+    
+</body>
+</html>
+<script>
+    var object =[
+        {
+            id:20,
+            name:'thang',
+        },
+        {
+            id:22,
+            name:'john',
+        },
+        {
+            id:25,
+            name:'ha',
+        }
+    ]
+
+
+
+
+
+//fillter:lọc giá trị
+const numbers = [1, 2, 3, 4, 5, 6];
+const evenNumbers = numbers.filter(number => number % 2 === 0);
+
+
+console.log(evenNumbers);
+// evenNumbers sẽ chứa [2, 4, 6]
+
+
+//map: biến đổi giá trị, nhân cới giá trị đó
+
+const numberss = [1, 2, 3, 4, 5];
+const squaredNumbers = numberss.map(number => number * number);
+// squaredNumbers sẽ chứa [1, 4, 9, 16, 25]
+console.log(squaredNumbers);
+
+
+//reduce: tổng hợp giá trị đauw ra giá trị duy nhất
+const numberssss = [1, 2, 3, 4, 5];
+const sum = numberssss.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// sum sẽ chứa 15
+console.log(sum);
+
+</script>

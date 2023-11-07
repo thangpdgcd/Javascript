@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    /*
+    callback?
+    -làm hàm function được truyền qua đối số khi gọi hàm khác   
+    1.là hàm
+    2.được truyền qua đối số
+    */
+
+
+   function Mycode(param)
+   {
+    param('i am a developer');
+   }
+    function array(code)
+    {
+        console.log('this is the code: ', code);
+    }
+    Mycode(array)
+</script>

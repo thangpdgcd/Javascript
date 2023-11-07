@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+/*
+Math object
+-Math.round
+-Math.abs
+-Math.ceil
+-Math.floor
+-Math.random
+-Math.min
+-Math.max
+*/
+
+
+console.log(Math.PI)
+console.log(Math.round(1.8));// tăng giá trị lên và làm tròn
+console.log(Math.abs(-4));//trả về giá trị tuyệt đối âm về dương
+console.log(Math.ceil(5.4));//tăng giá trị làm tròn
+console.log(Math.floor(4.5));// làm tròn giá trị không tăng
+console.log(Math.random());
+
+var random=Math.floor(Math.random()*5)
+var bonus=[
+    '10 coin',
+    '20 coin',
+    '30 coin',
+    '40 coin',
+    '50 coin'
+]
+console.log(bonus[random]);
+
+var random=Math.floor(Math.random()*100)
+if(random<50)
+{
+    console.log('successfully');
+}
+
+
+console.log(Math.max(-100,1,90));
+console.log(Math.min(-100,1,90));
+</script>
